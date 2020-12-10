@@ -24,19 +24,43 @@ Given below are the testing metrics achieved by both the scripts. 'Reddit' refer
 
 ## Example predictions:
 
-Both the scripts perform similar in practise with a few false positives here and there. Let's look at a couple of examples. 
+Both the scripts perform similar in practise with a few false positives here and there. 
 
-&gt;&gt; Input sentence
+### Let's look at a couple of examples that the model detects correctly.
 
-&gt; Prediction
+&gt;&gt; Well, this day was a total waste of a good outfit. (Input sentence)
 
-&gt;&gt; Well, this day was a total waste of a good outfit.
-
-&gt; Sarcasm detected.
+&gt; Sarcasm detected. (Prediction)
 
 &gt;&gt; Tell me something I don’t know.
 
 &gt; Sarcasm detected.
+
+&gt;&gt; It’s so thoughtful for the teacher to give us all this homework right before Spring Break.
+
+&gt; Sarcasm detected.
+
+&gt;&gt; Whisper my favorite words: “It’s free of charge.”
+
+&gt; Sarcasm detected.
+
+&gt;&gt; Listening to the news! Again? Well, it changes every day, you see.
+
+&gt; Sarcasm detected.
+
+### Now let's look at a couple of examples that the model fails to detect 
+
+&gt;&gt; Either you haven't taken a bath for days or you have a questionable choice in perfumes.
+
+&gt; Sarcasm not detected.
+
+&gt;&gt; Do you really think this country is going to elect an orange guy with a funny name to be president of the US?
+
+&gt; Sarcasm not detected.
+
+&gt;&gt; When I hear you speak I feel sorry for my brain cells.
+
+&gt; Sarcasm not detected.
 
 ## Conclusion:
 The accuracies that these models achieve is between 66% and 79% which might not look very impressive but then we must consider the fact that this program only helps a computer to classify based on raw text. In most cases, humans detect sarcasm based on the tone of the speaker which is a privilege out of the scope of this project.
