@@ -11,10 +11,22 @@ There are two different scripts that load two different datasets. Both can be fo
 ## Process: 
 The script begins by pre-processesing the raw text by calling the neceassary classes. It then converts the remaining words into a huge vector containing 15,000 of the most frequent words found in sarcastic and non-sarcastic sentences. After splitting the data into the training and test set, it applies the Random Forest classifier on the vector and prints metrics like the confusion matrix, accuracy, precision, recall and the F1 score. Finally, it runs a while loop and asks the user to input a sentence which is preprocessed and the output prints if the model detects sarcasm in the sentence or not. 
 
-## Output:
+## Outputs:
+
+Given below are the metrics achieved by both the scripts. Reddit refers to the script that loads the comments taken from Reddit. Headlines refers to the script that loads the news headlines dataset.
+
+| Metrics (Reddit) | Values  | Metrics (News Headlines) | Values | 
+| ---------------- | ------- | ------------------------ | ------ |
+| Accuracy         | 66.88%  | Accuracy                 | 79.7%  |
+| Precision        | 0.67    | Precision                | 0.82   |
+| Recall           | 0.65    | Recall                   | 0.77   |
+| F1 Score         | 0.66    | F1 Score                 | 0.80   |
+
+## Example predictions:
 
 
-
+## Conclusion:
+The accuracies that these models achieve is between 66% and 79% which might not look very impressive but then we must consider the fact that this program only helps a computer to classify based on raw text. In most cases, humans detect sarcasm based on the tone of the speaker which is a privilege out of the scope of this project.
 
 References:
 
