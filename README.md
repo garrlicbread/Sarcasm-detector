@@ -29,7 +29,7 @@ Both the scripts perform similar in practise with a few false positives here and
 >> Input sentence
 > Prediction
 
-<p>
+`<addr>` 
 
 >> Well, this day was a total waste of a good outfit.
 > Sarcasm detected.
