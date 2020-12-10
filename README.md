@@ -29,10 +29,8 @@ Both the scripts perform similar in practise with a few false positives here and
 >> Input sentence
 > Prediction
 
-&lt;derp>
-
->> Well, this day was a total waste of a good outfit.
-> Sarcasm detected.
+&gt;&gt; Well, this day was a total waste of a good outfit.
+&gt; Sarcasm detected.
 
 >> Tell me something I don’t know.
 > Sarcasm detected.
