@@ -17,7 +17,7 @@ Given below are the testing metrics achieved by both the scripts. 'Reddit' refer
 
 | Metrics (Reddit) | Values  | Metrics (News Headlines) | Values | 
 | ---------------- | ------- | ------------------------ | ------ |
-| Accuracy         | 66.88%  | Accuracy                 | 79.7%  |
+| Accuracy (in %)  | 66.88   | Accuracy (in %)          | 79.70  |
 | Precision        | 0.67    | Precision                | 0.82   |
 | Recall           | 0.65    | Recall                   | 0.77   |
 | F1 Score         | 0.66    | F1 Score                 | 0.80   |
@@ -35,4 +35,5 @@ References:
 
 1) News Headlines dataset : https://www.kaggle.com/rmisra/news-headlines-dataset-for-sarcasm-detection
 2) Reddit Comments dataset: https://www.kaggle.com/sherinclaudia/sarcastic-comments-on-reddit
-3) Sarcasm examples: https://examples.yourdictionary.com/examples-of-sarcasm.html
+3) One liner sarcastic examples: https://examples.yourdictionary.com/examples-of-sarcasm.html
+4) 
