@@ -63,11 +63,11 @@ Both the scripts perform similar in practise with a few false positives here and
 &gt; Sarcasm not detected.
 
 ## Conclusion:
-The accuracies that these models achieve is between 66% and 79% which might not look very impressive but then we must consider the fact that this program only helps a computer to classify based on raw text. In most cases, humans detect sarcasm based on the tone of the speaker which is a privilege out of the scope of this project.
+The accuracies that these models achieve is between 66% and 79% which might not look very impressive but then we must consider the fact that this program only helps a computer to classify based on raw text. In most cases, humans detect sarcasm based on the tone of the speaker which is a privilege out of the scope of this project. Nevertheless, both the scripts perform on par when fed with one liner sarcastic remarks. To get the best out of this model, the input sentences are recommended to be equal to or more than ten words.
 
 References:
 
 1) News Headlines dataset : https://www.kaggle.com/rmisra/news-headlines-dataset-for-sarcasm-detection
 2) Reddit Comments dataset: https://www.kaggle.com/sherinclaudia/sarcastic-comments-on-reddit
 3) One liner sarcastic examples: https://examples.yourdictionary.com/examples-of-sarcasm.html
-4) 
+4) More examples: https://www.examples.com/education/sarcasm-examples.html
