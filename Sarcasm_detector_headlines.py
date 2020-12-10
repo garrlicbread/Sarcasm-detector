@@ -17,8 +17,8 @@ from sklearn.metrics import accuracy_score, confusion_matrix, f1_score, precisio
 # Importing the dataset 
 print("Importing the dataset...")
 
-df1 = pd.read_json("C:/Users/Sukant Sidnhwani/Desktop/Python/Projects/Sarcasm Detector/Sarcasm_Headlines_Dataset.json", lines = True)
-df2 = pd.read_json("C:/Users/Sukant Sidnhwani/Desktop/Python/Projects/Sarcasm Detector/Sarcasm_Headlines_Dataset_v2.json", lines = True)
+df1 = pd.read_json("C://Desktop/Python/Projects/Sarcasm Detector/Sarcasm_Headlines_Dataset.json", lines = True)
+df2 = pd.read_json("C://Desktop/Python/Projects/Sarcasm Detector/Sarcasm_Headlines_Dataset_v2.json", lines = True)
 add = [df1, df2]
 df = pd.concat(add)
 
