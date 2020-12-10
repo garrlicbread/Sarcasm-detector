@@ -1,9 +1,4 @@
-# A more accurate version of Sarcasm Detector 
-
-# The only change to be made in this version is that,
-# We're only considering statements that have more than 5 words
-
-# This will provide more context for the algorithm and hence more words
+# Sarcasm Detector using Reddit comments dataset.
 
 # Execution Time measurer
 import time 
@@ -22,14 +17,14 @@ from sklearn.metrics import accuracy_score, confusion_matrix, f1_score, precisio
 # Importing the dataset 
 print("Importing the dataset...")
 
-df = pd.read_csv(r"C:\Users\Sukant Sidnhwani\Desktop\Python\Projects\Sarcasm Detector\Sarcastic_comments.txt",
+df = pd.read_csv(r"C:\\Desktop\Python\Projects\Sarcasm Detector\Sarcastic_comments.txt",
                  quoting = 3,
                  delimiter = '\t',
                  low_memory = False)
 
 print(f"Size of Dataset = {len(df)}")
 
-df = df[df.comment.str.count(' ') > 10]
+df = df[df.comment.str.count(' ') > 10] # Only considering more than 10 words
 
 print(f"Size of Dataset = {len(df)}")
 
@@ -46,9 +41,7 @@ clean_data = []
 stop_words = set(stopwords.words('english'))
 
 for i in df.index:
-    
     try:
-        
         review = re.sub('[^a-zA-Z]', ' ', str(df['comment'][i]))
         review = review.lower()
         review = review.split()
@@ -57,14 +50,17 @@ for i in df.index:
         clean_data.append(review)
         
     except KeyError:
+        pass
+      
+        # # Uncomment if any errors arise. Reddit comment dataset is a bit messy. The section below removes the comments causing problems
         
-        df.drop(i)
+        #df.drop(i)
         
-        for j in range(i - 10, i):
-            df.drop(j, axis = 0)
+        #for j in range(i - 10, i):
+        #    df.drop(j, axis = 0)
         
-        for j in range(i, i + 10):
-            df.drop(j, axis = 0)
+        #for j in range(i, i + 10):
+        #    df.drop(j, axis = 0)
             
 print("\nCleaned.")
 
@@ -139,6 +135,3 @@ while True:
         print("Sarcasm not detected.")
         
     # demo = []
-
-# In conclusion, this model performs similar to the first version with logistic regression
-# However, it's accuracy is slightly higher
