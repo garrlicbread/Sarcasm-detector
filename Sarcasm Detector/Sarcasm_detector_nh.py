@@ -1,9 +1,4 @@
-# A more accurate version of Sarcasm Detector 
-
-# The only change to be made in this version is that,
-# We're only considering statements that have more than 5 words
-
-# This will provide more context for the algorithm and hence more words
+# Sarcasm Detector using the News Headlines dataset.
 
 # Execution Time measurer
 import time 
@@ -29,11 +24,11 @@ df = pd.concat(add)
 
 print(f"Size of Dataset = {len(df)}")
 
+# We're only considering statements that have more than 10 words. This will provide more context for the algorithm.
 df = df[df.headline.str.count(' ') > 10]
 
 print(f"Size of Dataset = {len(df)}")
 
-# df = df.sample(n = 33500)
 y = df.iloc[:, -1].values
 
 print("\nImported.")
@@ -46,9 +41,7 @@ clean_data = []
 stop_words = set(stopwords.words('english'))
 
 for i in df.index:
-    
     try:
-        
         review = re.sub('[^a-zA-Z]', ' ', str(df['headline'][i]))
         review = review.lower()
         review = review.split()
@@ -58,12 +51,12 @@ for i in df.index:
         
     except KeyError:
         pass
-        
+    
+        # # Uncomment the section below this if any errors arise
+     
         # df.drop(i)
-        
         # for j in range(i - 10, i):
         #     df.drop(j, axis = 0)
-        
         # for j in range(i, i + 10):
         #     df.drop(j, axis = 0)
             
@@ -141,5 +134,5 @@ while True:
         
     # demo = []
 
-# In theory, this model performs better with the newspaper headline dataset than the redit dataset
-# However, in practise, the reddit dataset gives better results.
+# In theory, this model performs better with the newspaper headline dataset than the reddit dataset
+# But in practice, the reddit dataset gives better results.
