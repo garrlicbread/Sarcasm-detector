@@ -26,10 +26,10 @@ Given below are the testing metrics achieved by both the scripts. 'Reddit' refer
 
 Both the scripts perform similar in practise with a few false positives here and there. Let's look at a couple of examples. 
 
->>> Input sentence
+>> Input sentence
 > Prediction
 
-<addr>
+<p>
 
 >> Well, this day was a total waste of a good outfit.
 > Sarcasm detected.
