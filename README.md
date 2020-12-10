@@ -26,16 +26,17 @@ Given below are the testing metrics achieved by both the scripts. 'Reddit' refer
 
 Both the scripts perform similar in practise with a few false positives here and there. Let's look at a couple of examples. 
 
->> Input sentence
-> Prediction
+&gt;&gt; Input sentence
+
+&gt; Prediction
 
 &gt;&gt; Well, this day was a total waste of a good outfit.
+
 &gt; Sarcasm detected.
 
->> Tell me something I don’t know.
-> Sarcasm detected.
+&gt;&gt; Tell me something I don’t know.
 
-
+&gt; Sarcasm detected.
 
 ## Conclusion:
 The accuracies that these models achieve is between 66% and 79% which might not look very impressive but then we must consider the fact that this program only helps a computer to classify based on raw text. In most cases, humans detect sarcasm based on the tone of the speaker which is a privilege out of the scope of this project.
