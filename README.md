@@ -13,7 +13,7 @@ Both of the scripts begin by pre-processesing the raw text by calling the necess
 
 ## Outputs:
 
-Given below are the testing metrics achieved by both the scripts. 'Reddit' refers to the script that loads the Reddit comments dataet. 'Headlines' refers to the script that loads the news headlines dataset.
+Given below are the testing metrics achieved by both the scripts. 'Reddit' refers to the script that loads the Reddit comments dataset. 'Headlines' refers to the script that loads the news headlines dataset.
 
 | Metrics (Reddit) | Values  | Metrics (News Headlines) | Values | 
 | ---------------- | ------- | ------------------------ | ------ |
